@@ -15,13 +15,14 @@
     * @return {array} An array of phrases that could be used in the game
     */
      createPhrases(){
-        const Phrase = [
-            "close but no cigar",
-            "a bird in the hand is worth two in the bush",
-            "batten down the hatches",
-            "early to bed and early to rise makes a man healthy, wealthy and wise",
-            "rag and bone man"
+        const phrases = [
+            new Phrase("close but no cigar"),
+            new Phrase("a bird in the hand is worth two in the bush"),
+            new Phrase("batten down the hatches"),
+            new Phrase("early to bed and early to rise makes a man healthy, wealthy and wise"),
+            new Phrase("rag and bone")
         ]
+        return phrases;
      }
 
      startGame(){
