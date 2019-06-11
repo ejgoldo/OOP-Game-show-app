@@ -25,13 +25,15 @@
         return phrases;
      }
 
-     startGame(){
-
-     }
-
+     /**
+    * Selects random phrase from phrases property
+    * @return {Object} Phrase object chosen to be used
+    */
      getRandomPhrase(){
-
+        const selected = Math.floor(Math.random() * this.phrases.length) - 1;
+        return selected;
      }
+    //  working on random phrase
 
      handleInteraction(){
 
@@ -44,6 +46,10 @@
      checkForWin(){
 
      }
+
+     startGame(){
+
+    }
 
      gameOver(){
          
