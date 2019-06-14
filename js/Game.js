@@ -30,10 +30,8 @@
     * @return {Object} Phrase object chosen to be used
     */
      getRandomPhrase(){
-        const selected = Math.floor(Math.random() * this.phrases.length) - 1;
-        return selected;
+        return this.phrases[Math.floor(Math.random() * this.phrases.length)];
      }
-    //  working on random phrase
 
      handleInteraction(){
 
