@@ -33,3 +33,12 @@
 
 // end of test code
 
+
+
+// event listener to start the game 
+let game;
+const startBtn = document.getElementById('btn__reset');
+startBtn.addEventListener('click', () => {
+    game = new Game();
+    game.startGame();
+});
