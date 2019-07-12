@@ -34,7 +34,7 @@
      }
 
      handleInteraction(){
-
+        
      }
 
      removeLife(){

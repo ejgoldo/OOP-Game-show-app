@@ -27,8 +27,12 @@
             });
      }
 
-     checkLetter(){
-
+     checkLetter(letter){
+        if(this.phrase.includes(letter)){
+            return true;
+        } else {
+            return false;
+        }
      }
 
      showMatchedLetter(){
