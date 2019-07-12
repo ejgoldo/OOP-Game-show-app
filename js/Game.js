@@ -33,17 +33,38 @@
         return this.phrases[Math.floor(Math.random() * this.phrases.length)];
      }
 
+
      handleInteraction(){
 
      }
 
+
+     /**
+    * Increases the value of the missed property
+    * Removes a life from the scoreboard
+    * Checks if player has remaining lives and ends game if player is out
+    */
      removeLife(){
          
      }
 
+
+     /**
+    * Checks for winning move
+    * @return {boolean} True if game has been won, false if game wasn't
+    won
+    */
      checkForWin(){
-        
+        let phraseLetters = document.querySelectorAll('.letter');
+        let matchedLetters = document.querySelectorAll('.show');
+        if(matchedLetters.length === phraseLetters.length){
+            return true;
+        } else {
+            return false;
+        }
      }
+
+
     /**
     * Begins game by selecting a random phrase and displaying it to user
     */
@@ -54,6 +75,11 @@
         this.activePhrase.addPhraseToDisplay();
     }
 
+
+    /**
+    * Displays game over message
+    * @param {boolean} gameWon - Whether or not the user won the game
+    */
      gameOver(){
          
      }
