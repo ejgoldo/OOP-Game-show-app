@@ -27,6 +27,11 @@
             });
      }
 
+
+     /**
+    * Checks if passed letter is in phrase
+    * @param (string) letter - Letter to check
+    */
      checkLetter(letter){
         if(this.phrase.includes(letter)){
             return true;
@@ -35,6 +40,11 @@
         }
      }
 
+     
+     /**
+    * Displays passed letter on screen after a match is found
+    * @param (string) letter - Letter to display
+    */
      showMatchedLetter(){
          const allLetters = document.getElementById('qwerty');
          if(this.checkLetter(allLetters)){

@@ -34,7 +34,7 @@
      }
 
      handleInteraction(){
-        
+
      }
 
      removeLife(){
@@ -42,7 +42,7 @@
      }
 
      checkForWin(){
-
+        
      }
     /**
     * Begins game by selecting a random phrase and displaying it to user
