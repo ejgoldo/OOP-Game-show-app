@@ -45,7 +45,15 @@
     * Checks if player has remaining lives and ends game if player is out
     */
      removeLife(){
-         
+         this.missed+= 1;
+         let heartLife = document.querySelectorAll('.tries');
+         let heartLifeImg = heartLife.firstChild;
+         heartLife.classList.remove('tries');
+         heartLifeImg.src = 'images/lostHeart.png';
+
+         if(this.missed === 5){
+             this.gameOver = 'false';
+         }
      }
 
 
