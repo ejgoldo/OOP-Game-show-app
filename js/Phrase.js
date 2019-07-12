@@ -36,6 +36,12 @@
      }
 
      showMatchedLetter(){
-         
+         const allLetters = document.getElementById('qwerty');
+         if(this.checkLetter(allLetters)){
+             for(let i=0; i<allLetters.length; i++){
+                 allLetters[i].classList.add('show');
+                 allLetters[i].classList.remove('hide');
+             }
+         }
      }
  }
