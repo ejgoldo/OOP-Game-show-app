@@ -52,7 +52,7 @@
          heartLifeImg.src = 'images/lostHeart.png';
 
          if(this.missed === 5){
-             this.gameOver = 'false';
+             this.gameOver(false);
          }
      }
 
