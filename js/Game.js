@@ -88,7 +88,20 @@
     * Displays game over message
     * @param {boolean} gameWon - Whether or not the user won the game
     */
-     gameOver(){
-         
+     gameOver(gameWon){
+         const startPage = document.getElementById('overlay');
+         startPage.style.display = 'flex';
+         const hOneMessage = document.getElementById('game-over-message');
+         startPage.classList.remove('start');
+         if(gameWon){
+             startPage.classList.add('win');
+             let message = 'You won! Good job!';
+             hOneMessage.textContent = message;
+         } else {
+             startPage.classList.add('lose');
+             let message = 'Tough break. You lose. Better luck next time!';
+             hOneMessage.textContent = message;
+         }
+
      }
  }
