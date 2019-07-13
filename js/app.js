@@ -42,3 +42,12 @@ startBtn.addEventListener('click', () => {
     game = new Game();
     game.startGame();
 });
+
+// event listener for keypress of letter or on-screen keyboard
+const keys = document.getElementById('qwerty');
+keys.addEventListener('click', (event) => {
+    const e = event.target;
+    if(e.classList.contains('key')){
+        game.handleInteraction(e);
+    }
+});
