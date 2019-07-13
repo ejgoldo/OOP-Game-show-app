@@ -40,14 +40,14 @@
         }
      }
 
-     
+
      /**
     * Displays passed letter on screen after a match is found
     * @param (string) letter - Letter to display
     */
-     showMatchedLetter(){
-         const allLetters = document.getElementById('qwerty');
-         if(this.checkLetter(allLetters)){
+     showMatchedLetter(letter){
+         const allLetters = document.querySelectorAll(`.${letter}`);
+         if(this.checkLetter(letter)){
              for(let i=0; i<allLetters.length; i++){
                  allLetters[i].classList.add('show');
                  allLetters[i].classList.remove('hide');
