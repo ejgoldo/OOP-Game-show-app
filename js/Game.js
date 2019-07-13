@@ -46,7 +46,7 @@
     */
      removeLife(){
          this.missed+= 1;
-         let heartLife = document.querySelectorAll('.tries');
+         let heartLife = document.querySelector('.tries');
          let heartLifeImg = heartLife.firstChild;
          heartLife.classList.remove('tries');
          heartLifeImg.src = 'images/lostHeart.png';
