@@ -121,4 +121,27 @@
          }
 
      }
+
+     resetGame(){
+         const initalScreen = document.getElementById('overlay');
+         initalScreen.classList.remove('win', 'lose');
+         initalScreen.classList.add('start');
+
+         const phraseUl = document.querySelector('#phrase ul');
+         phraseUl.innerHTML = "";
+
+         const allKeys = document.querySelectorAll('.key');
+         for(let i=0; i<allKeys.length; i++){
+             allKeys[i].classList.remove('chosen', 'wrong');
+             allKeys[i].disabled = false;
+         }
+
+         const lives = document.querySelectorAll('#scoreboard ol li');
+         for(let i=0; i<lives.length; i++){
+             if(lives[i].classList != 'tries'){
+                 lives[i].classList.add('tries');
+                 lives[i].firstChild.src = 'images/liveHeart.png';
+             }
+         }
+     }
  }
