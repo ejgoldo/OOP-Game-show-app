@@ -112,20 +112,17 @@
          startPage.classList.remove('start');
          if(gameWon){
              startPage.classList.add('win');
+             startPage.classList.remove('lose');
              let message = 'You won! Good job!';
              hOneMessage.textContent = message;
          } else {
              startPage.classList.add('lose');
+             startPage.classList.remove('win');
              let message = 'Tough break. You lose. Better luck next time!';
              hOneMessage.textContent = message;
          }
 
-     }
-
-     resetGame(){
-         const initalScreen = document.getElementById('overlay');
-         initalScreen.classList.remove('win', 'lose');
-         initalScreen.classList.add('start');
+         startPage.classList.add('start');
 
          const phraseUl = document.querySelector('#phrase ul');
          phraseUl.innerHTML = "";
@@ -143,5 +140,6 @@
                  lives[i].firstChild.src = 'images/liveHeart.png';
              }
          }
+
      }
  }
