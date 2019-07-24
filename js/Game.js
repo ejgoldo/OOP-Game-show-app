@@ -122,6 +122,7 @@
              hOneMessage.textContent = message;
          }
 
+        //  code below resets the page and game for a new game
          startPage.classList.add('start');
 
          const phraseUl = document.querySelector('#phrase ul');
