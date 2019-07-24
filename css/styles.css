@@ -40,10 +40,12 @@ h2 {
   text-transform: uppercase;
   font-size: var(--font-size-large);
   margin: 0;
+  text-shadow: 2px 2px 3px black;
 }
 
 h1 {
   font-size: 30px;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 button {
@@ -58,6 +60,10 @@ button {
   -o-transition: var(--transition);
   transition: var(--transition);
   cursor: pointer;
+}
+
+button:hover {
+  background-color: orange;
 }
 
 #btn__reset {
@@ -138,8 +144,9 @@ button {
 }
 
 .wrong {
-  background: #f7a964;
+  background: red;
   color: #FFFFFF;
+  filter: blur(2px);
 }
 
 .btn__reset {
@@ -196,7 +203,7 @@ button {
 }
 
 .lose {
-  background-color: #f5785f;
+  background-color: red;
 }
 
 .lose a {

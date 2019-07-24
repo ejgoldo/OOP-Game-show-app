@@ -19,7 +19,7 @@
             new Phrase("close but no cigar"),
             new Phrase("a bird in the hand is worth two in the bush"),
             new Phrase("batten down the hatches"),
-            new Phrase("early to bed and early to rise makes a man healthy, wealthy and wise"),
+            new Phrase("early to bed and early to rise makes a man healthy wealthy and wise"),
             new Phrase("rag and bone")
         ]
         return phrases;
