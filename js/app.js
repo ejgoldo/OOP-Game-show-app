@@ -51,3 +51,18 @@ keys.addEventListener('click', (event) => {
         game.handleInteraction(e);
     }
 });
+
+document.addEventListener('keydown', (event) => {
+    const allKeys = document.querySelectorAll('.key');
+    for(let i = 0; i<allKeys.length;i++){
+        if(event.key === allKeys[i].textContent){
+            if(allKeys[i].disabled === false){
+                game.handleInteraction(allKeys[i]);
+            } else {
+                return false;
+            }
+        }
+    }
+
+});
+
